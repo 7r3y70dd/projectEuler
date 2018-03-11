@@ -4,14 +4,11 @@ public class P2FibonacciNumbers {
 
   public static void main(String[] args) {
     int sum = 0;
-    for (int i = 1, y = 2, z, c; y < 4000000; i = z, y += c) {
-      if (y % 2 == 0) {
-        sum += y;
+    for (int i = 1, j = 2; j < 4000000; j += i, i = j - i) {
+      if (j % 2 == 0) {
+        sum += j;
       }
-      c = i;
-      z = y;
     }
     System.out.println("Sum of even Fibonacci numbers until 4000000: " + sum);
   }
 }
-
