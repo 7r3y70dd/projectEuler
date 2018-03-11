@@ -1,0 +1,8 @@
+allprojects {
+  apply plugin: 'java'
+
+  group = 'twtodd'
+  version = 0.1
+  sourceCompatibility = 1.9
+  targetCompatibility = 1.9
+}
